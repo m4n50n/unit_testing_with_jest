@@ -4,9 +4,8 @@
 
 ## Instructions 📄
  
-1. Open this repository in **Gitpod**
-2. Download learnpack globally (if you don't have it already) using the following command in the terminal: `$ npm i learnpack -g`
-3. Start the exercise: `$ learnpack start`
+1. Open this repository in **Gitpod** and wait until LearnPack is loaded.
+2. Follow the *LearnPack Instructions*.
 
 ## What is this exercise about ❓
 
