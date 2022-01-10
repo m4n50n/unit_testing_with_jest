@@ -3,9 +3,28 @@
 ✏ *Using the [jest framework](https://jestjs.io/) to create the first code tests*.
 
 ## Instructions 📄
- 
+
+<u>Open repository</u>:
 1. Open this repository in **Gitpod** and wait until LearnPack is loaded.
-2. Follow the *LearnPack Instructions*.
+2. Follow the *LearnPack Instructions* (run *learnpack start* in the terminal if instructions are not showed).
+
+<u>Run the exercise</u>:
+1. Initialize the project (this creates a *package.json* file in the project root):
+```bash
+$ npm init -y
+```
+
+2. Install Jest:
+```bash
+$ npm install jest --save
+```
+
+3. Open the *package.json* file and write "jest" in the *scripts -> test* node (instead of "echo \"Error: no test specified\" && exit 1").
+
+4. Run the next command to test:
+```bash
+$ npm run test
+```
 
 ## What is this exercise about ❓
 
