@@ -6,7 +6,7 @@
 
 <u>Open repository</u>:
 1. Open this repository in **Gitpod** and wait until LearnPack is loaded.
-2. Follow the *LearnPack Instructions* (run *learnpack start* in the terminal if instructions are not showed).
+2. Follow the *LearnPack Instructions* (run **learnpack start** in the terminal if instructions are not showed).
 
 <u>Run the exercise</u>:
 1. Initialize the project (this creates a *package.json* file in the project root):
