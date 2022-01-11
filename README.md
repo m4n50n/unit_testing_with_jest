@@ -26,6 +26,8 @@ $ npm install jest --save
 $ npm run test
 ```
 
+5. The exercise files are ***app.js*** and ***test.js*** (in the root directory)
+
 ## What is this exercise about ❓
 
 We are going to be using the Jest library to build a program capable of converting numeric values from one currency to another:
