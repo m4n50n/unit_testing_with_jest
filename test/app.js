@@ -1,7 +1,7 @@
 // Variables
 let oneEuroIs = {
-    "JPY": 130.2, // Japan yen
-    "USD": 1.13, // US dollar
+    "JPY": 131.15, // Japan yen
+    "USD": 1.14, // US dollar
     "GBP": 0.83, // British pound
 }
 
@@ -15,12 +15,12 @@ const fromEuroToDollar = (euro) => {
 }
 
 const fromDollarToYen = (dollar) => {
-    return parseFloat((dollar * oneEuroIs.JPY).toFixed(2));
+    return parseFloat(((oneEuroIs.JPY / oneEuroIs.USD) * dollar).toFixed(2));
 }
 
-const fromYantoPound = (yan) => {
-    return parseFloat((yan * oneEuroIs.GBP).toFixed(2));
+const fromYentoPound = (yen) => {
+    return parseFloat(((oneEuroIs.GBP / oneEuroIs.JPY) * yen).toFixed(2));
 }
 
 // Export functions
-module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYantoPound };
+module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYentoPound };

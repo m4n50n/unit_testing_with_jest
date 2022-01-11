@@ -1,9 +1,11 @@
 // Import functions
-const { sum, fromEuroToDollar, fromDollarToYen, fromYantoPound } = require("./app.js");
+const { sum, fromEuroToDollar, fromDollarToYen, fromYentoPound } = require("./app.js");
 
 /**
  * Tests definition
+ * Before this, add "jest --detectOpenHandles" to scripts -> test node in the package.json file
  * https://jestjs.io/es-ES/docs/api#describename-fn
+ * https://jestjs.io/docs/expect
  */
 describe("Sum", () => {
     test("Adds 14 + 9 to equal 23", () => {
@@ -12,19 +14,21 @@ describe("Sum", () => {
     });
 });
 
+const InitialEuros = 3.5;
+
 describe("Convert values", () => {
-    test("One euro should be 1.13 dollars", () => {
-        let euro  = fromEuroToDollar(3.5); 
-        expect(euro).toBe(3.95);
+    test("3.5 euro should be 3.99 dollars", () => {
+        let dollar  = fromEuroToDollar(InitialEuros); 
+        expect(dollar).toBe(3.99);
     });
 
-    test("One dollar should be 130.2 yens", () => {
-        let euro  = fromDollarToYen(fromEuroToDollar(3.5)); 
-        expect(euro).toBe(514.29);
+    test("3.99 dollars should be 459.03 yens", () => {
+        let yen  = fromDollarToYen(fromEuroToDollar(InitialEuros)); 
+        expect(yen).toBe(459.03);
     });
 
-    test("One euro should be 0.83 pounds", () => {
-        let euro  = fromYantoPound(fromDollarToYen(fromEuroToDollar(3.5))); 
-        expect(euro).toBe(426.86);
+    test("459.03 yens should be 2.91 pounds", () => {
+        let pound  = fromYentoPound(fromDollarToYen(fromEuroToDollar(InitialEuros))); 
+        expect(pound).toBe(2.91);
     });
 });
