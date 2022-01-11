@@ -26,7 +26,7 @@ $ npm install jest --save
 $ npm run test
 ```
 
-5. The exercise files are ***app.js*** and ***test.js*** (in the root directory)
+5. The exercise files are ***app.js*** and ***test.js*** (in the *test* folder)
 
 ## What is this exercise about ❓
 
