@@ -3,7 +3,7 @@ const { sum, fromEuroToDollar, fromDollarToYen, fromYentoPound } = require("./ap
 
 /**
  * Tests definition
- * Before this, add "jest --detectOpenHandles" to scripts -> test node in the package.json file
+ * Before this, we must add "jest --detectOpenHandles" to scripts -> test node in the package.json file
  * https://jestjs.io/es-ES/docs/api#describename-fn
  * https://jestjs.io/docs/expect
  */
