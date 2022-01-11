@@ -19,7 +19,7 @@ $ npm init -y
 $ npm install jest --save
 ```
 
-3. Open the *package.json* file and write "jest" in the *scripts -> test* node (instead of "echo \"Error: no test specified\" && exit 1").
+3. Open the *package.json* file and write ***jest --detectOpenHandles*** in the *scripts -> test* node (instead of "echo \"Error: no test specified\" && exit 1").
 
 4. Run the next command to test:
 ```bash
